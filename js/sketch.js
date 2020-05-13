@@ -65,12 +65,20 @@ function draw() {
 
 }
 
+function mousePressed() {
+    audioStart = true;
+    console.log("audio on");
+    let snd = new Audio("../images/birb.mp3");
+    snd.volume = 0.2;
+}
+
 function sendMessage() {
 
-  if (usernameInput.value() !== '' && messageInput.value() != '') {
+  if (usernameInput.value() !== '' && messageInput.value() != '' && audioStart) {
 
-    audioStart = true;
+
     let snd = new Audio("../images/bell.mp3");
+    snd.volume = 0.2;
 
     snd.play();
 
