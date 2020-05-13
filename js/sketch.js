@@ -12,7 +12,7 @@ let sendBtn;
 let chatsLoaded = false;
 let messageDiv;
 let audioStart = false
-var sound = new AudioContext;
+let sound = new AudioContext;
 
 
 function setup() {
