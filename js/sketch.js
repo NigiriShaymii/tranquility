@@ -11,7 +11,8 @@ let usernameInput;
 let sendBtn;
 let chatsLoaded = false;
 let messageDiv;
-let audioStart = false;
+let audioStart = false
+var sound = new AudioContext;
 
 
 function setup() {
@@ -67,11 +68,10 @@ function draw() {
 }
 
 function mousePressed() {
-    let context = new AudioContext();
     audioStart = true;
     console.log("audio on");
-    let snd = new Audio("../images/birb.mp3");
-    snd.volume = 0.2;
+    sound = new Audio("../images/birb.mp3");
+    sound.volume = 0.2;
 }
 
 function sendMessage() {
