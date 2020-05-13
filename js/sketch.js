@@ -71,8 +71,8 @@ function mousePressed() {
     audioStart = true;
     console.log("audio on");
     sound = new Audio("images/birb.mp3");
-    sound.play();
     sound.volume = 0.2;
+    sound.play();
 }
 
 function sendMessage() {
@@ -81,9 +81,8 @@ function sendMessage() {
 
 
     let snd = new Audio("images/bell.mp3");
-    snd.play();
-    snd.volume = 0.2;
 
+    snd.volume = 0.2;
     snd.play();
 
     let timestamp = Date.now();
