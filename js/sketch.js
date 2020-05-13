@@ -117,8 +117,6 @@ function displayLastChat() {
     <br> ${fbDataArray[index].message}`);
 
   p2.position(index * 50, random(windowHeight));
-  p2.style('background-color', `hsl(${(i + 180) % 300}, 100%, 60%)`); //changed color
-
   p.parent('messageDiv');
 
   p2.class('message');
