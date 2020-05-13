@@ -70,7 +70,7 @@ function draw() {
 function mousePressed() {
     audioStart = true;
     console.log("audio on");
-    sound = new Audio("../images/birb.mp3");
+    sound = new Audio("images/birb.mp3");
     sound.volume = 0.2;
 }
 
@@ -79,7 +79,7 @@ function sendMessage() {
   if (usernameInput.value() !== '' && messageInput.value() != '' && audioStart) {
 
 
-    let snd = new Audio("../images/bell.mp3");
+    let snd = new Audio("images/bell.mp3");
     snd.volume = 0.2;
 
     snd.play();
