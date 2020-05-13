@@ -70,9 +70,6 @@ function draw() {
 function mousePressed() {
     audioStart = true;
     console.log("audio on");
-    sound = new Audio("images/birb.mp3");
-    sound.volume = 0.2;
-    sound.play();
 }
 
 function sendMessage() {
