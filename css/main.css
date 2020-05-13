@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url('../images/beach.jpg');
+  font-family: 'Dancing Script', cursive;
+}
+canvas {
+  display: block;
+}
+
+h3 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+
+  background: -webkit-linear-gradient(#ffff00, #ff7f00, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-image: linear-gradient(to right,  rgba(255, 255, 0, 1), rgba(255, 0, 0, 1));
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+#messageDiv {
+  overflow: scroll;
+  width: 500px;
+  height: 500px;
+  color: black;
+
+}
+
+#sendDiv {
+  overflow: scroll;
+
+}
+
+#chat {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+
+  border-style: solid;
+
+  /* custom border image */
+  /* fun tool to make your own: https://maxbittker.github.io/broider/ */
+
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAA7UlEQVRYR+1YQQ6AIAzT/z9aYyKJIYBtNzDgPLO2thtx7tskzz6Jzi2EeicVjn7h6FEhVdOQ8BAyCbjhqITXEpoAa2dyQq9zRZxfCM3TlSJ9gDQTtDg6rVDrjTTM0c+EJuK36e8qMIEz9yhyVhENGYGQQ0CKwrsGwl9KaK9ehZxkejSE3g4g7UetIlRUwHBReNDbMNMJCJRaaSmhVESEo5SziKMhlOn9JRztHXntw9t9ZxLmplky7MM5dqYrB8tyF3t9qZOZ6ymvR2pLnFIvI2QS8Mh/T97XjwkPcdRE4FUcQr2cVJY7b24Kb5roT3NASCt33/pJAAAAAElFTkSuQmCC") 14 /  14px / 0 round;
+
+  border-width:  50px;
+  border-style:  solid;
+
+  background-color: rgb(0, 127, 255, 0.75);
+
+
+
+}
+
+.message {
+  z-index: -1;
+  border-radius: 100%;
+  padding: 30px;
+}
