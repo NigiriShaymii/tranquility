@@ -69,6 +69,7 @@ function sendMessage() {
 
   if (usernameInput.value() !== '' && messageInput.value() != '') {
 
+    audioStart = true;
     let snd = new Audio("../images/bell.mp3");
 
     snd.play();
