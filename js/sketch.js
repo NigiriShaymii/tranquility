@@ -11,6 +11,7 @@ let usernameInput;
 let sendBtn;
 let chatsLoaded = false;
 let messageDiv;
+let audioStart = false;
 
 function setup() {
 
