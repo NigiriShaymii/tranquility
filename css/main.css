@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap');
 
-body {
+
+html body {
   margin: 0;
   padding: 0;
   background-color: black;
   background-image: url('../images/beach.jpg');
   font-family: 'Dancing Script', cursive;
+
+  background-repeat: no-repeat;
 }
 canvas {
   display: block;
