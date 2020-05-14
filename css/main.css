@@ -26,6 +26,13 @@ h3 {
 p {
   color: white;
   font-size: 20px;
+  text-align: center;
+}
+
+#direction p{
+  color: black;
+  font-size: 30px;
+  text-align: center;
 }
 
 #messageDiv {
