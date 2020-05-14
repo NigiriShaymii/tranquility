@@ -138,6 +138,7 @@ function displayLastChat() {
   let p2 = createP(`${fbDataArray[index].username}:
     <br> ${fbDataArray[index].message}`);
 
+  p2.style('background-color', `hsl(${(index + 200) % 300}, 90%, 60%)`); //changed color
   p2.position(index * 50, random(windowHeight));
   p.parent('messageDiv');
 
