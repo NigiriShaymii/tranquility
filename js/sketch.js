@@ -68,12 +68,19 @@ function draw() {
 }
 
 function mousePressed() {
-    audioStart = true;
 
     let snd = new Audio("images/birb.mp3");
+
+    if(!audioStart)
+    {
     snd.play();
-    snd.volume = 0.3;
+    snd.loop = true;
+    snd.volume = 0.2;
     console.log("audio on");
+    console.log(snd.loop);
+    audioStart = true;
+    }
+
 }
 
 function sendMessage() {
