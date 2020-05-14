@@ -12,7 +12,7 @@ let sendBtn;
 let chatsLoaded = false;
 let messageDiv;
 let audioStart = false
-let sound = new AudioContext;
+var sound = new AudioContext;
 
 
 function setup() {
@@ -69,6 +69,11 @@ function draw() {
 
 function mousePressed() {
     audioStart = true;
+
+    let snd = new Audio("images/birb.mp3");
+
+    snd.volume = 0.2;
+    snd.play();
     console.log("audio on");
 }
 
